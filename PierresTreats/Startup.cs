@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using PierresTreats.Models;
-//new code
+
 using Microsoft.AspNetCore.Identity;
 
 namespace PierresTreats
@@ -27,12 +27,12 @@ namespace PierresTreats
       services.AddMvc();
 
       services.AddEntityFrameworkMySql()
-        .AddDbContext<RecipeBoxContext>(options => options
+        .AddDbContext<PierresTreatsContext>(options => options
         .UseMySql(Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(Configuration["ConnectionStrings:DefaultConnection"])));
 
-      //new code
+      
       services.AddIdentity<ApplicationUser, IdentityRole>()
-                .AddEntityFrameworkStores<RecipeBoxContext>()
+                .AddEntityFrameworkStores<PierresTreatsContext>()
                 .AddDefaultTokenProviders();
 
       services.Configure<IdentityOptions>(options =>
@@ -50,12 +50,12 @@ namespace PierresTreats
     {
       app.UseDeveloperExceptionPage();
 
-      //new code
+      
       app.UseAuthentication();
 
       app.UseRouting();
 
-      //new code
+      
       app.UseAuthorization();
 
       app.UseEndpoints(routes =>
