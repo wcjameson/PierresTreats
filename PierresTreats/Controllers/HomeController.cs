@@ -6,7 +6,7 @@ using System;
 
 namespace PierresTreats.Controllers
 {
-  public class HomeController : Controllers
+  public class HomeController : Controller
   {
     private readonly PierresTreatsContext _db;
     public HomeController(PierresTreatsContext db)
