@@ -27,3 +27,5 @@ else
   }
   </ul>
 }
+
+<p>@Html.ActionLink("Add a flavor to this treat!", "AddFlavor", new { id = Model.TreatId }) | @Html.ActionLink("Edit Treat", "Edit", new { id = Model.TreatId }) | @Html.ActionLink("Delete Treat", "Delete", new { id = Model.TreatId })</p>

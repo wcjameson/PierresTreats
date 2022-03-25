@@ -6,10 +6,10 @@ using System.Linq;
 
 namespace PierresTreats.Controllers
 {
-  public class FlavorController : Controller
+  public class FlavorsController : Controller
   {
     private readonly PierresTreatsContext _db;
-    public FlavorController(PierresTreatsContext db)
+    public FlavorsController(PierresTreatsContext db)
     {
       _db = db;
     }
