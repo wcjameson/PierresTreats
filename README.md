@@ -26,7 +26,7 @@ _This C# web application lets a user create a list of treats and flavors for the
 
 ### Database Table Structure
 
-![image]()
+![image](/PierresTreats/wwwroot/img/chrome_t8PuXie7oa.png)
 
 ## Setup/Installation Requirements
 
