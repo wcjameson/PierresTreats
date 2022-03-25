@@ -1,6 +1,6 @@
 # PierresTreats
 
-![image]()
+![image](/PierresTreats/wwwroot/img/ltr0yebw.bmp)
 
 #### A C# application built with ASP.NET Core, Entity to integrate MySQL databases, and Identity for authentication/authorization
 
